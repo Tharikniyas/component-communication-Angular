@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'component-communication';
+  count:number=0;
+  toIncrease(){
+    this.count++;
+  }
+  toDecrease(){
+    this.count--;
+  }
+
 }

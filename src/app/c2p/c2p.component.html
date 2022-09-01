@@ -1,0 +1,15 @@
+ <h1>Child To Parent</h1>
+ 
+ <div class="container">
+    <h1>Parent</h1>
+    <h3>Value Is: {{data}}</h3>
+    <p>Value is (Using local variable):{{childSecond.counterValue}}</p>
+    <h4>Value is (using ViewChild):{{c2p.counterValue}}</h4>
+ </div>
+
+<hr>
+ <app-com1 (countChange)="childData($event)"></app-com1>
+ <hr>
+ <app-com2 #childSecond></app-com2>
+ <hr>
+ <app-com3></app-com3><hr>
